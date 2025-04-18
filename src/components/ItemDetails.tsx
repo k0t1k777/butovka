@@ -15,7 +15,7 @@ export default function ItemDetails() {
   const item = items[parseInt(id || '0')];
 
   return (
-    <section className=" py-16 px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 text-center">
+    <section className="     py-16 px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 text-center">
       <h1 className="text-4xl font-extrabold text-gray-800 mb-8">Подробности {item.title}</h1>
 
       <div className="max-w-6xl mx-auto">

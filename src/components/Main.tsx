@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom'; // Импортируем Link для создания ссылок
+import { Link } from 'react-router-dom';
 import Img from './../assets/10.jpg';
 
 const items = [
-  { title: "Бытовка 15", img: Img },
-  { title: "Бытовка 2", img: Img },
-  { title: "Бытовка 3", img: Img },
-  { title: "Бытовка 4", img: Img },
-  { title: "Бытовка 77", img: Img },
-  { title: "Бытовка 12", img: Img },
+  { title: "Бытовка 15", img: [Img, Img, Img] },
+  { title: "Бытовка 2", img: [Img, Img, Img] },
+  { title: "Бытовка 3", img: [Img, Img, Img] },
+  { title: "Бытовка 4", img: [Img, Img, Img] },
+  { title: "Бытовка 77", img: [Img, Img, Img] },
+  { title: "Бытовка 12", img: [Img, Img, Img] },
 ];
 
 export default function Main() {
@@ -27,7 +27,7 @@ export default function Main() {
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-25 transition-opacity duration-300 z-0"></div>
             
             <img
-              src={item.img}
+              src={item.img[0]}
               alt={item.title}
               className="w-full h-48 object-cover transition-opacity duration-300 z-10"
             />
