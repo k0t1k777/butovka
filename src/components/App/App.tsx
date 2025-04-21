@@ -5,9 +5,11 @@ import Navigation from "../Navigation";
 import "./App.css";
 import ItemDetails from "../ItemDetails";
 
+const basename = "/butovka";
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <Header />
       <Navigation />
 

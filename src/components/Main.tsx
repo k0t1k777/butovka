@@ -11,7 +11,7 @@ export const items = [
   { title: "Бытовка 15", img: [Img] },
   { title: "Бытовка 2", img: [Img1, Img5] },
   { title: "Бытовка 3", img: [Img2, Img6, Img5] },
-  { title: "Бытовка 4", img: [Img3, Img6, Img, Img5] },
+  { title: "Бытовка 4", img: [Img3, Img6, Img] },
   { title: "Бытовка 77", img: [Img4, Img5] },
   { title: "Бытовка 12", img: [Img5, Img, Img6] },
 ];
