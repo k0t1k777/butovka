@@ -1,12 +1,6 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import {
-  butovki,
-  modal,
-  containers,
-  summer,
-  bathrooms,
-  volers,
-  karkas,
+  butovki, modal, containers, summer, bathrooms, volers, karkas,
 } from '../utills/constants';
 
 export default function Category() {
@@ -14,22 +8,14 @@ export default function Category() {
 
   const getArrayBySlug = (slug: string | undefined) => {
     switch (slug) {
-      case 'butovki':
-        return butovki;
-      case 'modal-buildings':
-        return modal;
-      case 'containers':
-        return containers;
-      case 'summer-houses':
-        return summer;
-      case 'bathrooms':
-        return bathrooms;
-      case 'volers':
-        return volers;
-      case 'karkas-buildings':
-        return karkas;
-      default:
-        return [];
+      case 'butovki': return butovki;
+      case 'modal-buildings': return modal;
+      case 'containers': return containers;
+      case 'summer-houses': return summer;
+      case 'bathrooms': return bathrooms;
+      case 'volers': return volers;
+      case 'karkas-buildings': return karkas;
+      default: return [];
     }
   };
 
@@ -51,8 +37,9 @@ export default function Category() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {categoryItems.map((item, index) => (
-          <div
+          <Link
             key={index}
+            to={`/${slug}/${index}`}
             className="bg-white rounded-xl shadow-md overflow-hidden relative group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
             <img
@@ -65,7 +52,7 @@ export default function Category() {
                 {item.title}
               </h3>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

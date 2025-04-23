@@ -9,18 +9,20 @@ import Prices from "./Prices";
 import Delivery from "./Delivery";
 import Reviews from "./Reviews";
 import Contacts from "./Contacts";
+import ItemDetail from "./ItemDetail";
 
 const basename = "/butovka";
 
 function App() {
   return (
-    // <Router basename={basename}>
-    <Router>
+    <Router basename={basename}>
+    {/* <Router> */}
       <Header />
       <Navigation />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/:slug" element={<Category />} />
+        <Route path="/:slug/:id" element={<ItemDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/prices" element={<Prices />} />

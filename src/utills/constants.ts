@@ -20,7 +20,7 @@ export const items = [
     { title: 'Блабла', text: "Бытовка", img: [Img, Img3, Img4 ] },
     { title: 'Блабла', text: "Блок контейнеры", img: [Img2, Img6, Img5] },
     { title: 'Блабла', text: "Модульные строения", img: [Img1, Img5] },
-    { title: 'Блабла', text: "Блок контейнеры", img: [Img2, Img6, Img5] },
+    { title: 'Блабла', text: "Блок контейнеры", img: [Img2, Img6, Img5, Img2, Img6] },
   ];
   
   export const modal = [
