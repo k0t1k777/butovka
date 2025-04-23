@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "./../assets/logo.png";
 
 export default function Header() {
@@ -5,7 +6,9 @@ export default function Header() {
     <header className="w-full bg-gradient-to-r from-yellow-50 to-yellow-100 p-6 shadow-lg">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center space-x-3">
-          <img src={Logo} alt="Лого" className="h-10" />
+          <Link to="/">
+            <img src={Logo} alt="Лого" className="h-10" />
+          </Link>
           <span className="text-2xl font-extrabold text-gray-800">Компания</span>
         </div>
 
@@ -28,7 +31,7 @@ export default function Header() {
                 href="mailto:info@example.com" 
                 className="text-blue-500 hover:text-blue-700 transition duration-300"
               >
-                ✉ info@example.com
+                ✉️ info@example.com
               </a>
             </div>
           </div>
