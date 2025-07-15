@@ -46,6 +46,7 @@ export default function Category() {
               src={item.img[0]}
               alt={item.title}
               className="w-full h-48 object-cover"
+              // className="w-full h-48 object-contain bg-white"
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-gray-800">
