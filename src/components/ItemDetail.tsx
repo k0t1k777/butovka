@@ -73,7 +73,7 @@ export default function ItemDetail() {
         <div>
           <h1 className="text-3xl font-bold mb-4">{item.title}</h1>
           <p className="text-lg text-gray-700 mb-6">
-            Это короткое описание для: <strong>{item.title}</strong>.</p>
+           <strong>{item.text}</strong>.</p>
           {item.specs && (
             <div className="mb-6">
               <h2 className="text-xl font-semibold mb-2">Характеристики</h2>

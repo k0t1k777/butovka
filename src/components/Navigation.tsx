@@ -5,7 +5,6 @@ export default function Navigation() {
     { label: 'Главная', path: '/' },
     { label: 'О нас', path: '/about' },
     { label: 'Каталог', path: '/catalog' },
-    { label: 'Цены', path: '/prices' },
     { label: 'Доставка', path: '/delivery' },
     { label: 'Отзывы', path: '/reviews' },
     { label: 'Контакты', path: '/contacts' },

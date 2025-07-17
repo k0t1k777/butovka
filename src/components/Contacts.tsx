@@ -1,11 +1,11 @@
 
 export default function Contacts() {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen text-center px-6">
+      <div className="flex flex-col mt-10 text-center px-6">
         <h1 className="text-3xl font-bold mb-4">Контакты</h1>
-        <p>Телефон: +7 (978) 123-45-67</p>
-        <p>Email: info@butovka-crimea.ru</p>
-        <p>Адрес: г. Симферополь, ул. Промышленная, 12</p>
+        <p>Номер для связи: +7 (966) 999-41-78</p>
+        <p>Ватсап: 7(991)169-40-91</p>
+        <p>Адрес: Люберцы, Красково.</p>
       </div>
     );
   }
