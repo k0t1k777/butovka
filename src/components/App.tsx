@@ -3,7 +3,6 @@ import Header from "./Header";
 import Main from "./Main";
 import Navigation from "./Navigation";
 import Category from "./Category";
-import About from "./About";
 import Catalog from "./Catalog";
 import Delivery from "./Delivery";
 import Reviews from "./Reviews";
@@ -14,15 +13,14 @@ const basename = "/butovka";
 
 function App() {
   return (
-    <Router basename={basename}>
-    {/* <Router> */}
+    // <Router basename={basename}>
+    <Router>
       <Header />
       <Navigation />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/:slug" element={<Category />} />
         <Route path="/:slug/:id" element={<ItemDetail />} />
-        <Route path="/about" element={<About />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/reviews" element={<Reviews />} />

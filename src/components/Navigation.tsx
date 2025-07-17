@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 export default function Navigation() {
   const navItems = [
     { label: 'Главная', path: '/' },
-    { label: 'О нас', path: '/about' },
     { label: 'Каталог', path: '/catalog' },
     { label: 'Доставка', path: '/delivery' },
     { label: 'Отзывы', path: '/reviews' },
