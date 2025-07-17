@@ -14,8 +14,8 @@ const basename = "/butovka";
 
 function App() {
   return (
-    // <Router basename={basename}>
-    <Router>
+    <Router basename={basename}>
+    {/* <Router> */}
       <Header />
       <Navigation />
       <Routes>
