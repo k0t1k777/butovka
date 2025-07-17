@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <section className="text-center py-16 px-6 bg-transparent">
       <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-12 tracking-tight">
-        Изготовление бытовок в Крыму
+        Изготовление бытовок
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
